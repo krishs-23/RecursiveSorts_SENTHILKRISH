@@ -1,9 +1,9 @@
 /**
  * MergeSort.java
  * 
- * Name: 
- * Period:
- * Last Revision Date:
+ * Name: Krish Senthil
+ * Period: 2
+ * Last Revision Date: 11/14/2025
  * Description: 
  */
 
