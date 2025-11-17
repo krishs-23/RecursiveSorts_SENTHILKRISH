@@ -25,7 +25,7 @@ public class MergeSort {
 		sort(left);
 		sort(right);
 		
-		System.out.println("Merging array " + Arrays.toString(left) + " and " + Arrays.toString(right));
+		System.out.println("Merging arrays " + Arrays.toString(left) + " and " + Arrays.toString(right));
 		
 		merge(left, right, nums);
 	}
