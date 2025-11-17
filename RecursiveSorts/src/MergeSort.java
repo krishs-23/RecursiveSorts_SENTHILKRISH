@@ -11,7 +11,7 @@ import java.util.Arrays;
 
 public class MergeSort {
 	
-	public static void sort(int[] nums){
+	public static void sort(int[] nums) {
 		System.out.println("Sorting array " + Arrays.toString(nums));
 		
 		if (nums.length <= 1) {
@@ -48,7 +48,7 @@ public class MergeSort {
 		return newArray;
 	}
 	
-	private static void merge(int[] left, int[] right, int[] nums){
+	private static void merge(int[] left, int[] right, int[] nums) {
 		int lIndex = 0;
 		int rIndex = 0;
 		int ogIndex = 0;
@@ -78,10 +78,4 @@ public class MergeSort {
 		
 	}
 	
-	public static void main(String[] args) {
-		MergeSort tester = new MergeSort();
-		int[] testArr = {14, 2, 6, 4, 7};
-		tester.sort(testArr);
-		System.out.println("Sorted: " + Arrays.toString(testArr));
-	}
 }
