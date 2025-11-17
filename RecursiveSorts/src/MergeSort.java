@@ -11,6 +11,10 @@ import java.util.Arrays;
 
 public class MergeSort {
 	
+	/**
+	 * 
+	 * @param nums
+	 */
 	public static void sort(int[] nums) {
 		System.out.println("Sorting array " + Arrays.toString(nums));
 		
@@ -30,6 +34,13 @@ public class MergeSort {
 		merge(left, right, nums);
 	}
 	
+	/**
+	 * 
+	 * @param nums
+	 * @param start
+	 * @param stop
+	 * @return
+	 */
 	private static int[] splitArray(int[] nums, int start, int stop) {
 		int length = stop - start;
 		
@@ -46,6 +57,12 @@ public class MergeSort {
 		return newArray;
 	}
 	
+	/**
+	 * 
+	 * @param left
+	 * @param right
+	 * @param nums
+	 */
 	private static void merge(int[] left, int[] right, int[] nums) {
 		int lIndex = 0;
 		int rIndex = 0;
