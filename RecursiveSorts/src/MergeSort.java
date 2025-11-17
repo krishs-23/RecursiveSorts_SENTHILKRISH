@@ -25,7 +25,7 @@ public class MergeSort {
 		sort(left);
 		sort(right);
 		
-		System.out.println("Merging array " + Arrays.toString(nums));
+		System.out.println("Merging array " + Arrays.toString(left) + " and " + Arrays.toString(right));
 		
 		merge(left, right, nums);
 	}
@@ -40,9 +40,7 @@ public class MergeSort {
 		int[] newArray = new int[length];
 		
 		for (int i = 0; i < length; i++) {
-			if (start + i < nums.length) {
-				newArray[i] = nums[start + i];
-			}
+			newArray[i] = nums[start + i];
 		}
 			
 		return newArray;
