@@ -39,7 +39,7 @@ public class MergeSort {
 	 * @param nums
 	 * @param start
 	 * @param stop
-	 * @return
+	 * @return int[] 
 	 */
 	private static int[] splitArray(int[] nums, int start, int stop) {
 		int length = stop - start;
