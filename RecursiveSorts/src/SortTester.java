@@ -4,7 +4,7 @@
  * Name: Krish Senthil
  * Period: 2
  * Last Revision Date: 11/19/2025
- * Description: Test class for my recursive sorting algorithms (merge sort & quick sort)
+ * Description: JUnit Test class for my recursive sorting algorithms (merge sort & quick sort)
  */
 
 import org.junit.Test;
