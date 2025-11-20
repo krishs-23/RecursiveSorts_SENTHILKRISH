@@ -20,7 +20,7 @@ public class QuickSort {
 		if (low < high) {
 			int partitionInd = partition(nums, low, high);
 			
-			sort(nums, low, partitionInd-1);
+			sort(nums, low, partitionInd - 1);
 			sort(nums, partitionInd + 1, high);
 		}
 	}
@@ -37,7 +37,7 @@ public class QuickSort {
 				nums[smallInd] = nums[j];
 				nums[j] = temp;
 			}
-			System.out.println("Array after iteration " + j % low + ": " + Arrays.toString(nums));
+			System.out.println("Array after iteration " + ((j - low) + 1) + ": " + Arrays.toString(nums));
 		}
 		
 		int temp = nums[smallInd + 1];
@@ -45,8 +45,12 @@ public class QuickSort {
 		nums[high] = temp;
 		
 		System.out.println("Array after partition complete: " + Arrays.toString(nums) 
-																+ "\nPivot Index: " + pivot);
+																+ "\nPivot index: " + (pivot - 1));
 		return smallInd + 1;
 	}
 	
+	public static void main(String[] args) {
+		int[] test = {1, 5, 4, 2, 3};
+		sort(test);
+	}
 }
