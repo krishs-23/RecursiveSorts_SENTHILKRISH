@@ -45,7 +45,7 @@ public class QuickSort {
 		nums[high] = temp;
 		
 		System.out.println("Array after partition complete: " + Arrays.toString(nums) 
-																+ "\nPivot index: " + (pivot - 1));
+																+ "\nPivot index: " + (smallInd + 1));
 		return smallInd + 1;
 	}
 	
